@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(img/fondo_form.jpg);
+  background-image: url(fondopagina.jpg);
   color: #03396c;
   line-height: 1.6;
 }
@@ -180,3 +180,4 @@ footer {
     height: 100px;
   }
 }
+
