@@ -27,7 +27,8 @@ p {
   top: 0;
   background: #ffffff;
   z-index: 1000;
-  height: 280px;
+  height: auto;              /* Altura automática */
+  padding: 0.8rem 0;         /* Más compacto */
   box-shadow: 0 1px 4px rgba(0,0,0,0.08);
   transition: transform 0.35s ease;
 }
@@ -39,28 +40,29 @@ p {
 .header-container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 1.2rem 0;
+  padding: 0.5rem 0;         /* Menos espacio interno */
   text-align: center;
 }
 
 .logo img {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #fff;
 }
 
 .header-title {
-  font-size: 2rem;
+  font-size: 1.6rem;         /* Texto más pequeño */
   font-weight: 700;
   text-align: center;
   width: 100%;
+  margin: 0.2rem 0;          /* Reduce separación */
 }
 
 .header-subtitle {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 1rem;           /* Texto más pequeño */
+  margin: 0.2rem 0 0.5rem 0; /* Reduce separación */
   text-align: center;
   width: 100%;
 }
@@ -69,6 +71,7 @@ p {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-top: 0.3rem;        /* Espacio reducido arriba */
 }
 
 .social-icons img {
@@ -121,7 +124,7 @@ section h2 {
 
 .text-side {
   flex: 1;
-  padding: 50px;
+  padding: 40px;            /* Padding ligeramente reducido */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -173,21 +176,26 @@ footer {
 
   /* Header */
   .site-header {
-    height: auto;
-    padding: 1rem 0.5rem;
+    padding: 0.6rem 0.5rem;
   }
 
   .logo img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
   }
 
   .header-title {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    margin: 0.2rem 0;
   }
 
   .header-subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    margin: 0.2rem 0 0.4rem 0;
+  }
+
+  .social-icons {
+    margin-top: 0.2rem;
   }
 
   /* Main */
@@ -204,7 +212,7 @@ footer {
     font-size: 1.4rem;
   }
 
-  /* Sección split */
+  /* Sección split adapta a vertical */
   .section-split {
     flex-direction: column;
     height: auto;
@@ -213,12 +221,12 @@ footer {
   .image-side img {
     width: 100%;
     height: auto;
-    max-height: 250px;
+    max-height: 220px;
     object-fit: cover;
   }
 
   .text-side {
-    padding: 1.2rem;
+    padding: 1rem;
   }
 
   /* Texto */
@@ -235,8 +243,8 @@ footer {
   }
 
   form button {
-    padding: 0.9rem;
-    font-size: 1.1rem;
+    padding: 0.8rem;
+    font-size: 1.05rem;
   }
 
   /* Footer */
