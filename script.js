@@ -37,19 +37,6 @@ form.addEventListener('submit', function (e) {
       status.style.color = "red";
       console.error("EmailJS error:", error);
     });
-  
-
-  emailjs.send('service_w275uv9', 'template_2942636', templateParams)
-    .then(() => {
-      status.textContent = `Gracias ${name}, tu mensaje ha sido enviado correctamente.`;
-      status.style.color = "green";
-      form.reset();
-    })
-    .catch(error => {
-      status.textContent = "Error al enviar el mensaje.";
-      status.style.color = "red";
-      console.error(error);
-    });
 });
 
 /* ---------- HEADER DINÁMICO ---------- */
@@ -68,3 +55,4 @@ window.addEventListener('scroll', () => {
 
   lastScroll = currentScroll;
 });
+
