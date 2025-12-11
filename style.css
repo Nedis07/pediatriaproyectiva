@@ -180,5 +180,89 @@ footer {
     height: 100px;
   }
 }
+/* =================== RESPONSIVE MÓVIL =================== */
+
+@media (max-width: 700px) {
+
+  /* HEADER */
+  .site-header {
+    height: auto;
+    padding-bottom: 1rem;
+  }
+
+  .header-title {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .header-subtitle {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* CONTENEDOR GENERAL */
+  main {
+    margin: 1rem auto;
+    padding: 0 0.7rem;
+  }
+
+  section {
+    padding: 1.2rem;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+
+  /* ========== SECCIÓN SPLIT (imagen + texto) ========== */
+  .section-split {
+    flex-direction: column;      /* Cambia a vertical */
+    height: auto;                /* Ya no ocupa toda la pantalla */
+  }
+
+  .image-side {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-side img {
+    height: auto;
+    max-height: 250px;           /* Controla que no sea gigante */
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .text-side {
+    padding: 1.2rem;
+  }
+
+  /* TEXTO Y PÁRRAFOS */
+  p {
+    text-align: left;            /* Más legible en móvil */
+    font-size: 1rem;
+  }
+
+  /* FORMULARIO */
+  form input,
+  form textarea {
+    font-size: 1rem;
+  }
+
+  form button {
+    padding: 0.9rem;
+    font-size: 1.1rem;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
 
 
